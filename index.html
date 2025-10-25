@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechSneak</title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+    rel="stylesheet">
+
+  <!-- Corrected CSS link with cache-busting version -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}?v=1">
+</head>
+
+<body>
+  <header>
+    <h1>Project Caelum</h1>
+  </header>
+  <hr>
+  <section>
+    <div class="wrap">
+      <div class="container">
+        <div id="data" class="box">Fetching data...</div>
+        <div id="location" class="box"></div>
+      </div>
+      <aside>
+        <div id="chatbot" class="box">Chatbot</div>
+      </aside>
+    </div>
+    
+    <!-- JS files -->
+    <script src="{{ url_for('static', filename='cursor_trail.js') }}"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+  </section>
+
+  <section>
+    <h2 style="text-align:left;">Team TechSneak</h2>
+    <ul class="list">
+      <li>Samarth Sharma</li>
+      <li>Kaushal Yadav</li>
+      <li>Saurabh</li>
+      <li>Shiva Awasthi</li>
+    </ul>
+  </section>
+</body>
+
+</html>
+
+
+
+

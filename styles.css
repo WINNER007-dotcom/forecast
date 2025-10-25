@@ -1,0 +1,94 @@
+body {
+    background-color: rgb(25, 15, 25);
+    color: rgba(220, 220, 220, 1);
+    font-family: 'Quantico', sans-serif;
+    cursor: none;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-weight: 650;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    font-size: 50px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.cursortrail {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(220, 220, 220, 0.8), rgba(80, 80, 80, 0.05));
+    box-shadow: 0 0 10px rgba(200, 200, 200, 0.2);
+    opacity: 1;
+    pointer-events: none;
+    transition: transform 0.05s;
+    filter: blur(1px);
+    z-index: 9999;
+}
+
+.box {
+    border: 2px solid white;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    height: 300px;
+    background-color: rgb(40, 23, 40);
+    font-size: 40px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+    display: flex;
+    gap: 10px;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+#chatbot {
+    height: 400px;
+    width: 450px;
+}
+
+#location {
+    height: 500px;
+    width: 500px;
+}
+
+#data {
+    font-family: 'Quantico', sans-serif;
+    background-color: rgb(100, 85, 100);
+}
+
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: 275px;
+}
+
+.list li {
+    background: linear-gradient(135deg, rgb(40, 23, 40), rgb(70, 35, 70));
+    margin: 12px 0;
+    padding: 15px 20px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.list li::before {
+    content: '♣';
+    margin-right: 10px;
+    color: rgb(200, 150, 250);
+}
