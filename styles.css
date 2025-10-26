@@ -35,12 +35,18 @@ h2 {
     border: 2px solid white;
     padding: 20px;
     border-radius: 8px;
-    width: 400px;
-    height: 300px;
+    width: 430px;      
+    height: 430px;     
     background-color: rgb(40, 23, 40);
     font-size: 40px;
     font-family: 'Ubuntu', sans-serif;
 }
+
+#location {
+    height: 430px;      
+    width: 1260px;       
+}
+
 
 .container {
     display: flex;
@@ -59,10 +65,6 @@ h2 {
     width: 450px;
 }
 
-#location {
-    height: 500px;
-    width: 500px;
-}
 
 #data {
     font-family: 'Quantico', sans-serif;
@@ -90,5 +92,5 @@ h2 {
 .list li::before {
     content: '♣';
     margin-right: 10px;
-    color: rgb(200, 150, 250);
+    color: rgb(200, 150, 250);
 }
